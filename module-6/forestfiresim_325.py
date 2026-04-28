@@ -62,7 +62,7 @@ def main():
 
                 # NEW: lake cells are permanent — never change them
                 if forest[(x, y)] == LAKE:
-                    nextForest[(x, y)] = LAKE
+                    nextForest[(x, y)] = LAKE  # lake always stays the same
                     continue
 
                 if ((forest[(x, y)] == EMPTY)
